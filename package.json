@@ -1,0 +1,54 @@
+{
+    "name": "jest-return-value-hooks",
+    "version": "1.0.0",
+    "description": "Return any value from your tests instead of just Promises or undefined.",
+    "main": "dist/run.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc --project tsconfig.app.json",
+        "lint": "npm run lint:prettier && npm run lint:eslint",
+        "lint:eslint": "eslint {src,test}/**/*.ts",
+        "lint:eslint:fix": "eslint {src,test}/**/*.ts",
+        "lint:prettier": "prettier \"**/*\" --check --ignore-unknown",
+        "lint:prettier:fix": "prettier \"**/*\" --write --ignore-unknown",
+        "prepack": "npm run build",
+        "test": "jest"
+    },
+    "files": [
+        "index.js",
+        "dist",
+        "jest-preset.json"
+    ],
+    "keywords": [
+        "jest",
+        "rxjs"
+    ],
+    "author": {
+        "name": "Luca Becker",
+        "email": "luca.becker@sunbury.xyz",
+        "url": "https://sunbury.xyz"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "co": "4.6.0",
+        "is-generator-fn": "2.1.0",
+        "rxjs": "6.6.3"
+    },
+    "devDependencies": {
+        "@types/co": "4.6.2",
+        "@types/jest": "26.0.20",
+        "@types/node": "14.14.22",
+        "@typescript-eslint/eslint-plugin": "4.14.0",
+        "@typescript-eslint/parser": "4.14.0",
+        "eslint": "7.18.0",
+        "eslint-config-google": "0.14.0",
+        "eslint-config-prettier": "7.2.0",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-prettier": "3.3.1",
+        "eslint-plugin-unused-imports": "1.0.1",
+        "jest": "26.6.3",
+        "prettier": "2.2.1",
+        "ts-jest": "26.4.4",
+        "typescript": "4.1.3"
+    }
+}

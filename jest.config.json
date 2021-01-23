@@ -1,0 +1,8 @@
+{
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [],
+    "reporters": ["default"],
+    "rootDir": ".",
+    "setupFilesAfterEnv": ["./index.js"]
+}

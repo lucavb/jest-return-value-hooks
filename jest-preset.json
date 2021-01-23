@@ -1,0 +1,3 @@
+{
+    "setupFilesAfterEnv": ["./index.js"]
+}
